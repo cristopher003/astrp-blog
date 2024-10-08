@@ -1,0 +1,20 @@
+---
+import TagSelector from "@/components/TagSelector.astro";
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout title="blog">
+    <!-- npx astro sync -->
+    <div class="max-w-content-size mx-auto w-full">
+      <h1 class="text-3xl font-bold text-soft-white py-4">Blog</h1>
+      <TagSelector/>
+        <section class="mt-6 w-full">
+          <ul class="space-y-8">
+
+         <slot></slot>
+
+          </ul>
+        </section>
+      </div>
+      
+</Layout>
